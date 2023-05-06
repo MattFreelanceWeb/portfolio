@@ -12,7 +12,20 @@ module.exports = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      colors :{
+        'Primary':'#03B4BA',
+        'Secundary':'#305A5E',
+        'Tertiary':'#162F34',
+        'Quaternary':'#121D21',
+        'MainBg':'#AA9D9A'
+      },
+      fontFamily:{
+        Poppins:['var(--font-poppins)'],
+        ChakraPetch:['var(--font-chakra-petch)']
+      }
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-scrollbar')({ nocompatible: true }),
+  ],
 }
