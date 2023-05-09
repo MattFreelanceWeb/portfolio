@@ -42,7 +42,7 @@ function Navbar({}: Props) {
           {toggle ? (
             <Image
               src={LogoBlack}
-              alt={""}
+              alt={" logo black"}
               height={70}
               width={70}
               className="rounded-full cursor-pointer fixed top-6 left-4 md:static"
@@ -50,7 +50,7 @@ function Navbar({}: Props) {
           ) : (
             <Image
               src={LogoWhite}
-              alt={""}
+              alt={" logo white"}
               height={70}
               width={70}
               className="rounded-full cursor-pointer fixed top-6 left-4 md:static"

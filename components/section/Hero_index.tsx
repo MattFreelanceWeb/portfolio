@@ -22,18 +22,18 @@ function Hero_index({}: Props) {
         <Image
           placeholder={"blur"}
           src={BgHero}
-          alt={""}
+          alt={" main bg "}
           className="-z-10 absolute w-full h-full object-cover"
         />
         <Image
           src={StarGif}
-          alt={""}
+          alt={" stargif "}
           className="-z-10 absolute h-full w-full object-cover opacity-20"
         />
         <Image
           placeholder={"blur"}
           src={HeroProfile}
-          alt={""}
+          alt={" profile picture bg"}
           className="absolute h-full w-full object-cover opacity-40 translate-y-10"
         />
       </motion.div>
@@ -58,7 +58,7 @@ function Hero_index({}: Props) {
          <p>je m&apos;appelle matt, développeur web à votre service</p> 
         </div>
       </div>
-      <Link href='#about_index' className=" absolute bottom-4">
+      <Link href='/#about_index' className=" absolute bottom-4" aria-label="scroll-down">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"

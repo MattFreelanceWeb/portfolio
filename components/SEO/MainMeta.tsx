@@ -4,7 +4,6 @@ import WebsiteImg from '@/assets/portfolio(1).png'
 type Props = {};
 
 function MainMeta({}: Props) {
-    // todo faire des variables pour le meta title, la meta description, et l'image du site
 
 
   return (
