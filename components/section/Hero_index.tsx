@@ -3,7 +3,6 @@ import React from "react";
 import BgHero from "@/assets/bgHero.png";
 import StarGif from "@/assets/starGif.gif";
 import HeroProfile from "@/assets/heroProfile(2).png";
-import Button from "../button/Button";
 import { motion, useScroll, useTransform } from "framer-motion";
 import MeteorText from "../text/MeteorText";
 import Link from "next/link";
@@ -54,6 +53,9 @@ function Hero_index({}: Props) {
           <div className="flex items-center">
             <MeteorText content={"Portfolio"} delay={2.5} />
           </div>
+        </div>
+        <div className="font-Poppins text-xl">
+         <p>je m&apos;appelle matt, développeur web à votre service</p> 
         </div>
       </div>
       <Link href='#about_index' className=" absolute bottom-4">

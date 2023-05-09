@@ -60,16 +60,19 @@ function Navbar({}: Props) {
 
         {/* desktop nav */}
 
-        <div className="w-full items-center justify-end gap-2 p-4 rounded-lg bg-black/80 hidden md:flex">
+        <div className=" items-center justify-end gap-2 p-4 rounded-lg bg-black/80 hidden md:flex">
           <div className="flex items-center justify-center gap-2 z-10 ">
             <Button info="navbar" content="Accueil" href="/" />
-            <Button info="navbar" content="Infos" href="#about_index" />
-            <Button info="navbar" content="Projets" href="#project_index" />
+            <Button info="navbar" content="Infos" href="/#about_index" />
+            <Button info="navbar" content="Projets" href="/#project_index" />
           </div>
+          <div>
           <Button
             content="Contacter"
             href="mailto:matt.freelance.web@gmail.com"
           />
+          </div>
+
         </div>
 
         {/* toggle mobile nav */}
@@ -124,8 +127,8 @@ function Navbar({}: Props) {
         }`}
       >
         <Button info="secundary" content="Accueil" href="/" />
-        <Button info="secundary" content="Infos" href="#about_index" />
-        <Button info="secundary" content="Projets" href="#project_index" />
+        <Button info="secundary" content="Infos" href="/#about_index" />
+        <Button info="secundary" content="Projets" href="/#project_index" />
       </div>
       <div
         onClick={() => {

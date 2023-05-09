@@ -5,7 +5,7 @@ export default function Document() {
   return (
     <Html
       lang="fr"
-      className="bg-slate-900/80 scroll-smooth scrollbar-track-inherit scrollbar-thumb-Primary scrollbar-thumb-rounded-full scrollbar-thin"
+      className="bg-slate-900 scroll-smooth scrollbar-track-inherit scrollbar-thumb-Primary scrollbar-thumb-rounded-full scrollbar-thin"
     >
       <Head >
         <MainMeta/>

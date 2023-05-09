@@ -4,7 +4,6 @@ import Button from "../button/Button";
 import CvDownload from "../button/CvDownload";
 import TranslateToLeft from "../text/TranslateToLeft";
 import TranslateToRight from "../text/TranslateToRight";
-
 import { isEven } from "@/utils/function/isEven";
 
 type Props = {};
@@ -62,7 +61,7 @@ function About_index({}: Props) {
           <h2 className=" font-ChakraPetch text-xl capitalize ">
             / Qui suis-je ?
           </h2>
-          <CvDownload href="" download="" />
+          <CvDownload href="CV-Matteo-Campus.pdf" download="CV-Matteo-Campus.pdf" />
         </div>
 
         <div className="w-full h-full flex flex-col items-start gap-4 md:text-2xl ">
