@@ -21,7 +21,7 @@ function ProjectCardV2({ title, content, technos, id, src, alt,href }: Props) {
           {title}
         </h3>
         <ul className="font-Poppins w-3/4 pt-4">
-          <h4 className="font-ChakraPetch mb-2">{"///"}</h4>
+          <div className="font-ChakraPetch mb-2">{"///"}</div>
           {content.map((item, i) => (
             <li key={i}>{item}</li>
           ))}

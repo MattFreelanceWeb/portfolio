@@ -55,7 +55,7 @@ function Hero_index({}: Props) {
           </div>
         </div>
         <div className="font-Poppins text-xl">
-         <p>je m&apos;appelle matt, développeur web à votre service</p> 
+         <h1>je m&apos;appelle matt, développeur web à votre service</h1> 
         </div>
       </div>
       <Link href='/#about_index' className=" absolute bottom-4" aria-label="scroll-down">
