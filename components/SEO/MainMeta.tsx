@@ -1,14 +1,18 @@
 import React from "react";
-import WebsiteImg from '@/assets/portfolio(1).png'
 
 type Props = {};
 
 function MainMeta({}: Props) {
 
+  const url: string = "https://matt-freelance-web-portfolio.vercel.app/";
+  const title: string = "Matt Freelance Web — Portfolio";
+  const description: string =
+    "Bienvenue sur mon portfolio, ici vous pourrez apercevoir mon travail, me contacter et me suivre sur les réseaux. Si Vous avez un projet et vous recherchez un développeur, vous êtes au bon endroit !";
+  const img:string  = ''
 
   return (
     <>
-    {/** favicon */}
+      {/** favicon */}
       <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png" />
       <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png" />
       <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png" />
@@ -66,40 +70,37 @@ function MainMeta({}: Props) {
       <meta name="msapplication-TileColor" content="#ffffff" />
       <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
       <meta name="theme-color" content="#ffffff" />
-      
+
       {/** Primary Meta Tags */}
-      <title>Matt Freelance Web — Portfolio</title>
-      <meta name="title" content="Matt Freelance Web — Portfolio" />
+      <title>{title}</title>
+      <meta name="title" content={title}/>
       <meta
         name="description"
-        content="Bienvenue sur mon portfolio, ici vous pourrez apercevoir mon travail, me contacter et me suivre sur les réseaux. Si Vous avez un projet et vous recherchez un développeur, vous êtes au bon endroit !"
+        content={description}
       />
 
       {/** Open Graph / Facebook */}
       <meta property="og:type" content="website" />
-      <meta property="og:url" content="https://matt-freelance-web-portfolio.vercel.app/" />
-      <meta property="og:title" content="Matt Freelance Web — Portfolio" />
+      <meta property="og:url" content={url} />
+      <meta property="og:title" content={title} />
       <meta
         property="og:description"
-        content="Bienvenue sur mon portfolio, ici vous pourrez apercevoir mon travail, me contacter et me suivre sur les réseaux. Si Vous avez un projet et vous recherchez un développeur, vous êtes au bon endroit !"
+        content={description}
       />
-      <meta
-        property="og:image"
-        content={`${WebsiteImg}`}
-      />
+      <meta property="og:image" content={img}/>
 
       {/** Twitter */}
       <meta property="twitter:card" content="summary_large_image" />
-      <meta property="twitter:url" content="https://matt-freelance-web-portfolio.vercel.app/" />
-      <meta property="twitter:title" content="Matt Freelance Web — Portfolio" />
+      <meta
+        property="twitter:url"
+        content={url}
+      />
+      <meta property="twitter:title" content={title}/>
       <meta
         property="twitter:description"
-        content="Bienvenue sur mon portfolio, ici vous pourrez apercevoir mon travail, me contacter et me suivre sur les réseaux. Si Vous avez un projet et vous recherchez un développeur, vous êtes au bon endroit !"
+        content={description}
       />
-      <meta
-        property="twitter:image"
-        content={`${WebsiteImg}`}
-      />
+      <meta property="twitter:image" content={img} />
     </>
   );
 }
