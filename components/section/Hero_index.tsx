@@ -39,13 +39,13 @@ function Hero_index({}: Props) {
       </motion.div>
 
       <div className="w-full h-full flex flex-col items-start justify-center gap-8  text-4xl lg:text-6xl font-extrabold text-white px-20 font-ChakraPetch md:items-start capitalize notranslate ">
-        <div className="flex flex-col md:flex-row gap-8 ">
+        <div className="flex flex-col md:flex-row gap-4 ">
           <MeteorText content={"HELLO"} delay={0} />
           <MeteorText content={"WORLD!"} delay={0.5} />
         </div>
-        <div className="flex flex-col md:flex-row gap-8 ">
+        <div className="flex flex-col md:flex-row gap-4 ">
           <MeteorText content={"bienvenue"} delay={1} />
-          <div className="flex items center gap-4 md:gap-8">
+          <div className="flex items center gap-4 md:gap-4">
             <MeteorText content={"sur"} delay={1.9} />
             <MeteorText content={"mon"} delay={2.2} />
           </div>
